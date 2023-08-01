@@ -1,5 +1,6 @@
 h1 {
   font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -13,6 +14,12 @@ p, li {
   letter-spacing: 1px;
 }
 
+h2 {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
 body {
   width: 700px;
   margin: 0 auto;
@@ -21,22 +28,35 @@ body {
   border: 5px solid black;
 }
 
-h2 {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 30%;
+    background-color: #a64d79;
+    padding: 20px;
+    position: relative;
+}
+
+.profile img,
+.profile video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.profile video {
+    width: 100%;
 }
 
 img {
     border: 3px solid black
 }
-
-.videorama {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.right-aligned {
-    grid-column-start: 2;
-    padding: 1opx;
+.main-content {
+    flex: 1;
+    padding: 20px;
 }
