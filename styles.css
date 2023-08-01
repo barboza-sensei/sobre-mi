@@ -23,12 +23,14 @@ h2 {
 body {
   width: 700px;
   margin: 0 auto;
-  background-color: #c27ba0;
+  background-color: #d5a6bd;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
 
-
+main {
+  background-color: #c27ba0;
+}
 
 .container {
     display: flex;
@@ -56,6 +58,11 @@ body {
 img {
     border: 3px solid black
 }
+
+video{
+    border: 3px solid black
+}
+
 .main-content {
     flex: 1;
     padding: 20px;
