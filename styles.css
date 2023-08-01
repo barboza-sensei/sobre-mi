@@ -28,19 +28,16 @@ body {
   border: 5px solid black;
 }
 
-main {
-  background-color: #c27ba0;
-}
-
 .container {
     display: flex;
 }
 
 .sidebar {
     flex: 0 0 30%;
-    background-color: #a64d79;
+    background-color: #c27ba0;
     padding: 20px;
     position: relative;
+    border: 2px solid black;
 }
 
 .profile img,
