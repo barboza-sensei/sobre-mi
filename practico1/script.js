@@ -5,14 +5,15 @@ const calculateButton = document.getElementById('calculate');
 const resultElement = document.getElementById('result');
 const errorElement = document.getElementById('error');
 
-calculateButton.addEventListener('click', () => {
-    errorElement.textContent = '';
+const operator = document.getElementById('operator');
+const calculateButton = document.getElementById('calculate');
 
-    const num1 = parseFloat(operand1.value);
-    const num2 = parseFloat(operand2.value);
+calculateButton.addEventListener('click', () => {
+    const num1 = parseFloat(prompt('Ingresa el primer número:'));
+    const num2 = parseFloat(prompt('Ingresa el segundo número:'));
 
     if (isNaN(num1) || isNaN(num2)) {
-        errorElement.textContent = 'Ingresa números válidos en ambos campos.';
+        alert('Ingresa números válidos en ambos campos.');
         return;
     }
 
@@ -31,7 +32,7 @@ calculateButton.addEventListener('click', () => {
             break;
         case 'divide':
             if (num2 === 0) {
-                errorElement.textContent = 'No se puede dividir por cero.';
+                alert('No se puede dividir por cero.');
                 return;
             }
             result = num1 / num2;
@@ -39,7 +40,7 @@ calculateButton.addEventListener('click', () => {
     }
 
     if (!isFinite(result)) {
-        errorElement.textContent = 'El resultado es demasiado grande o pequeño.';
+        alert('El resultado es demasiado grande o pequeño.');
         return;
     }
 

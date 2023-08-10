@@ -1,15 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #2b2627;
+	background-image: url("recursos/vecteezy_geometric-shape-background-with-modern-design_11117932.png");
+	background-position: center center;
+	background-size: contain;
+	background-attachment: fixed;
 }
 
 .calculatora {
-    background-color: #ffffff;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+    background-color: #373032;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -17,8 +22,8 @@ body {
 }
 
 button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #cc2336;
+    color: #2b2627;
     border: none;
     border-radius: 4px;
     padding: 8px 16px;
