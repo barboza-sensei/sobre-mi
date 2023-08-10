@@ -44,5 +44,5 @@ calculateButton.addEventListener('click', () => {
         return;
     }
 
-    resultElement.textContent = `Resultado: ${result}`;
+    console.log(`El resultado es: ${result}`);
 });
