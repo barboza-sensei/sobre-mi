@@ -9,17 +9,19 @@
 <body>
     <div class="calculatora">
         <h1>Calculadora</h1>
-        <input id="operand1" type="number" maxlength="10" placeholder="Operando 1">
+        <input id="operand1" type="number" pattern="/^-?\d+\.?\d*$/"
+ onKeyPress="if(this.value.length==10) return false;" placeholder="Operando 1">
         <select id="operator">
             <option value="add">+</option>
             <option value="subtract">-</option>
             <option value="multiply">*</option>
             <option value="divide">/</option>
         </select>
-        <input id="operand2" type="number" maxlength="10" placeholder="Operando 2">
+        <input id="operand2" type="number" pattern="/^-?\d+\.?\d*$/"
+ onKeyPress="if(this.value.length==10) return false;" placeholder="Operando 2">
         <button id="calculate">Calcular</button>
+		<button id="clear">Limpiar</button>
         <p id="result"></p>
-        <p id="error"></p>
     </div>
     <script src="script.js"></script>
 </body>
