@@ -109,4 +109,5 @@ El flujo de trabajo llega a su fin y la calculadora está lista para otra operac
 Durante el desarrollo de la calculadora se encontraron varios y variados obstáculos. Para las cuestiones de índole más aplicativa, como atributos de los selectores CSS o de las etiquetas HTML, se han utilizado los siguientes sitios para consulta:
 - developer.mozilla.org;
 - w3schools.com
+
 En tanto la implementación, funcionabilidad y optimización del código Javascript se ha usado como apoyo herramientas de Chat-GPT y apoyo externo de un Técnico en Sistemas.
